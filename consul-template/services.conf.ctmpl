@@ -1,0 +1,21 @@
+##
+# Generated via Consul-Template at {{timestamp}}
+##
+
+{{range services -}}
+upstream {{.Name}}-hosts {
+  least_conn;
+{{- range service .Name}}
+  server {{.NodeAddress}}:{{.Port}};
+{{- end}}
+}
+
+server {
+  listen 80;
+  server_name {{ .Name }};
+
+  location / {
+    proxy_pass http://{{.Name}}-hosts;
+  }
+}
+{{end}}
