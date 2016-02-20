@@ -9,7 +9,6 @@ upstream {{.Name}}-hosts {
   server {{.NodeAddress}}:{{.Port}};
 {{- end}}
 }
-
 server {
   listen 80;
   server_name {{ .Name }};
@@ -18,4 +17,5 @@ server {
     proxy_pass http://{{.Name}}-hosts;
   }
 }
-{{end}}
+
+{{end -}}
