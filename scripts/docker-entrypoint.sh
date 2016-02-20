@@ -5,4 +5,4 @@ service nginx start
 consul-template \
   -consul "$CONSUL_HOST" \
   -log-level "$CONSUL_LOG_LEVEL" \
-  -config "$CONSUL_CONFIG"
+  -config "$CONSUL_TEMPLATE_CONFIG"

@@ -28,8 +28,9 @@ EXPOSE 80 443
 # environment variables configurable, with defaults
 ENV CONSUL_HOST 127.0.0.1:8500
 ENV CONSUL_LOG_LEVEL info
-ENV CONSUL_CONFIG /templates/config.hcl
+ENV CONSUL_TEMPLATE_CONFIG /templates/config.hcl
 
 WORKDIR /etc/nginx/sites-available
 
 CMD ["/bin/bash", "/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash/consul-template"]
