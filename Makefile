@@ -7,6 +7,7 @@ latest: Dockerfile
 
 run:
 	@docker run -d -p 8080:80 \
+		-e CONSUL_HOST="192.168.80.2:8500" \
 		-v "$(shell pwd)/consul-template:/templates" \
 		--name test-nginx-consul \
 		--dns=8.8.8.8 \
