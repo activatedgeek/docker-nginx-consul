@@ -1,5 +1,7 @@
 # docker-nginx-consul
 
+[![ImageLayers Size](https://img.shields.io/imagelayers/image-size/activatedgeek/nginx-consul/latest.svg)](https://hub.docker.com/r/activatedgeek/nginx-consul/)
+
 The front-end proxy for all the services, backed by Consul for
 service registry.
 
@@ -11,7 +13,7 @@ The container contains the following packages:
 
 ## Images
 
-* `latest`, `0.1`, `0.1.0` ([Dockerfile](./Dockerfile))
+* `latest`, `0.1`, `0.1.2` ([Dockerfile](./Dockerfile))
 
 ## Usage
 Pull the docker image from Docker hub as:
