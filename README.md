@@ -10,11 +10,12 @@ service registry.
 
 The container contains the following packages:
 * `Nginx` (1.9)
-* `Consul-Template` (1.3.0)
+* `Consul-Template` (0.14.0)
 
 ## Images
 
-* `latest`, `0.1`, `0.1.4` ([Dockerfile](./Dockerfile))
+* `latest`, `0.2`, `0.2.0` ([Dockerfile](./Dockerfile))
+* `0.1`, `0.1.4` (based on `Consul Template 0.13.0`)
 
 ## Usage
 Pull the docker image from Docker hub as:
