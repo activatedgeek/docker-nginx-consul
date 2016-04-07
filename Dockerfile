@@ -4,8 +4,8 @@ MAINTAINER Sanyam Kapoor "1sanyamkapoor@gmail.com"
 
 RUN apt-get -y update &&\
   apt-get install -y wget unzip &&\
-  wget https://releases.hashicorp.com/consul-template/0.13.0/consul-template_0.13.0_linux_amd64.zip &&\
-  unzip consul-template_0.13.0_linux_amd64.zip &&\
+  wget https://releases.hashicorp.com/consul-template/0.14.0/consul-template_0.14.0_linux_amd64.zip &&\
+  unzip consul-template_0.14.0_linux_amd64.zip &&\
   apt-get remove --purge -y wget unzip &&\
   apt-get autoremove -y &&\
   apt-get clean &&\
@@ -14,7 +14,7 @@ RUN apt-get -y update &&\
   rm -rf /usr/share/man/*
 
 RUN mv consul-template /bin/consul-template &&\
-  rm consul-template_0.13.0_linux_amd64.zip &&\
+  rm consul-template_0.14.0_linux_amd64.zip &&\
   rm -rf /etc/nginx/conf.d/* &&\
   mkdir -p /templates /etc/nginx/ssl /etc/nginx/sites-available /etc/nginx/sites-enabled
 
