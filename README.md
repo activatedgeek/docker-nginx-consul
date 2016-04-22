@@ -1,6 +1,6 @@
 # docker-nginx-consul
 
-| [![Build Status](https://travis-ci.org/activatedgeek/docker-nginx-consul.svg?branch=master)](https://travis-ci.org/activatedgeek/docker-nginx-consul) | [![](https://badge.imagelayers.io/activatedgeek/nginx-consul.svg)](https://hub.docker.com/r/activatedgeek/nginx-consul) |
+| [![Build Status](https://travis-ci.org/activatedgeek/docker-nginx-consul.svg?branch=master)](https://travis-ci.org/activatedgeek/docker-nginx-consul) | [![](https://imagelayers.io/badge/activatedgeek/nginx-consul:latest.svg)](https://imagelayers.io/?images=activatedgeek/nginx-consul:latest 'Get your own badge on imagelayers.io') |
 |:-:|:-:|
 
 The front-end proxy for all the services, backed by Consul for
@@ -14,7 +14,7 @@ The container contains the following packages:
 
 ## Images
 
-* `latest`, `0.2`, `0.2.0` ([Dockerfile](./Dockerfile))
+* `latest`, `0.2`, `0.2.1` ([Dockerfile](./Dockerfile))
 * `0.1`, `0.1.4` (based on `Consul Template 0.13.0`)
 
 ## Usage
